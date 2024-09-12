@@ -1,0 +1,74 @@
+<!--<!DOCTYPE html>
+<html lang="en" ng-app="countryApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div ng-controller="CountryController">
+        <div class="detail-container">
+            <img ng-src="{{selectedCountry.image}}" alt="{{selectedCountry.name}}">
+            <h2>{{selectedCountry.name}}</h2>
+            <p><strong>Region:</strong> {{selectedCountry.region}}</p>
+            <p><strong>Population:</strong> {{selectedCountry.population}}</p>
+            <p><strong>Capital:</strong> {{selectedCountry.capital}}</p>
+            <a href="main.html">Back to list</a>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/countryController.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Details - Belgium</title>
+    <link rel="stylesheet" href="./css/styles.css"> 
+</head>
+<body>
+    <header>
+        <h1>Where in the world?</h1>
+        <button id="dark-mode-toggle">
+            <i class="fas fa-moon"></i> Dark Mode
+        </button>
+    </header>
+    
+    <div class="container country-details">
+        <button onclick="history.back()">
+            <i class="fas fa-arrow-left"></i> Back
+        </button>
+        
+        <div class="details-wrapper">
+            <img src="https://flagcdn.com/w320/be.png" alt="Belgium Flag">
+            
+            <div class="country-info">
+                <h1>Belgium</h1>
+                <p><strong>Native Name:</strong> België</p>
+                <p><strong>Population:</strong> 11,319,511</p>
+                <p><strong>Region:</strong> Europe</p>
+                <p><strong>Sub Region:</strong> Western Europe</p>
+                <p><strong>Capital:</strong> Brussels</p>
+                
+                <p><strong>Top Level Domain:</strong> .be</p>
+                <p><strong>Currencies:</strong> Euro</p>
+                <p><strong>Languages:</strong> Dutch, French, German</p>
+                
+                <p><strong>Border Countries:</strong></p>
+                <button>France</button>
+                <button>Germany</button>
+                <button>Netherlands</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="/js/countryController.js"></script> 
+</body>
+</html>
